@@ -1,0 +1,32 @@
+{
+  "name": "food-dash",
+  "version": "1.0.0",
+  "description": "a food delivery app made with react and love",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Akshayacse1010/food-dash.git"
+  },
+  "keywords": [
+    "food",
+    "delivery",
+    "app"
+  ],
+  "author": "akshaya s",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akshayacse1010/food-dash/issues"
+  },
+  "homepage": "https://github.com/Akshayacse1010/food-dash#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
