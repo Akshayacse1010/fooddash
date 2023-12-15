@@ -13,14 +13,17 @@
   height: 120px;
 }
 .nav-items {
+  justify-content: space-around;
   padding-top: 50px;
-
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: baseline;
 }
 .nav-list {
   padding-right: 30px;
   color: rgb(107, 107, 107);
+  padding-bottom: 10px;
 }
 .Search {
   margin-top: 30px;
@@ -87,4 +90,53 @@
   &:hover {
     background-color: #b11905; /* Darker background color on hover */
   }
+}
+/* Shimmer animation */
+/* Shimmer animation */
+@keyframes shimmerAnimation {
+  0% {
+    background-position: -250px 0;
+  }
+  100% {
+    background-position: 250px 0;
+  }
+}
+
+/* Styling for the shimmer effect */
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between; /* Adjust alignment as needed */
+}
+
+.shimmer-cards {
+  width: 200px;
+  height: 250px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden; /* Add this line */
+}
+
+.shimmer-cards::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #f6f7f8 8%, #edeef1 18%, #f6f7f8 33%);
+  background-size: 500px 100%;
+  position: absolute;
+  animation: shimmerAnimation 1s infinite linear;
+}
+.logout-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  /* Add any other styles you want */
 }

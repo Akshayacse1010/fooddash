@@ -10,6 +10,7 @@ const Header = () => {
         <span className="nav-list">About us</span>
         <span className="nav-list">Contact Us</span>
         <span className="nav-list">Cart</span>
+        <button className="logout-button">logout</button>
       </div>
     </div>
   );
